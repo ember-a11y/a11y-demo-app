@@ -1,53 +1,19 @@
-# A11y-demo-app
+# Ember Accessibility Demo App
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Knowing how to build an accessible application is a combination of having great tools and great examples. This application exists to provide examples of all of the common Ember interface patterns. If you're an AT provider we would love to have a conversation with you about how to make each of these experiences stellar.
 
-## Prerequisites
+## Contributing
 
-You will need the following things properly installed on your computer.
-
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
-
-## Installation
-
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+We're starting with an enumeration of all the built-in functionality in Ember. After completing that we'll expand to include components from the Ember addon ecosystem. Please add examples!
 
 ## Running / Development
 
+Included in this addon is a demo application for testing.
+
 * `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Visit the demo app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
+## Commands
 
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+* `npm run test` - Run all tests.
+* `npm run demo` - Publish an updated demo app.

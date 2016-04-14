@@ -1,7 +1,7 @@
 {
   "name": "a11y-demo-app",
   "version": "0.0.0",
-  "description": "Small description for a11y-demo-app goes here",
+  "description": "Ember Accessibility Demo App",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -10,7 +10,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "demo": "ember github-pages:commit --message \"Publish demo application.\" && git push origin gh-pages:gh-pages"
   },
   "repository": "",
   "engines": {
@@ -37,7 +38,6 @@
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
-    "ember-welcome-page": "^1.0.1",
     "loader.js": "^4.0.1"
   }
 }
