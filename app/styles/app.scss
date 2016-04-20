@@ -3,7 +3,11 @@
 @import "bitters/base";
 
 $light-lime-green: #E8FFEB;
+$light-grey-hover: #F7F7F7;
+$black: #000000;
+
 $regular-padding: 1em;
+$narrow-padding: 0.5em;
 
 body {
   margin: 0 1em;
@@ -24,14 +28,30 @@ body {
   }
 }
 
-.navigation, .content {
-  padding: $regular-padding;
-}
-
 .navigation {
   @include span-columns(2);
+
+  padding-top: $narrow-padding;
+
+  li {
+    a {
+      color: $black;
+
+      display: block;
+      padding: $narrow-padding;
+
+      &:hover {
+        background-color: $light-grey-hover;
+      }
+
+      &.active {
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 .content {
   @include span-columns(10);
+  padding: $regular-padding;
 }
