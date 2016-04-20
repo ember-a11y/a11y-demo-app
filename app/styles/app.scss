@@ -2,6 +2,9 @@
 @import "neat";
 @import "bitters/base";
 
+$light-lime-green: #E8FFEB;
+$regular-padding: 1em;
+
 body {
   margin: 0 1em;
 }
@@ -12,11 +15,23 @@ body {
 
 .title {
   @include fill-parent();
-  background-color: $light-gray;
-  padding: 1em;
+  background-color: $light-lime-green;
+  padding: $regular-padding;
 
   h1 {
     margin: 0;
     margin-top: 3em;
   }
+}
+
+.navigation, .content {
+  padding: $regular-padding;
+}
+
+.navigation {
+  @include span-columns(2);
+}
+
+.content {
+  @include span-columns(10);
 }

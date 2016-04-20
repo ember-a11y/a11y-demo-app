@@ -3,10 +3,14 @@
     <h1>Ember Accessibility demo app</h1>
   </div>
 
-  <ul>
-    <li>{{link-to 'Home' 'index'}}</li>
-    <li>{{link-to 'Input helper' 'examples.input-helper'}}</li>
-  </ul>
+  <div class="navigation">
+    <ul>
+      <li>{{link-to 'Home' 'index'}}</li>
+      <li>{{link-to 'Input helper' 'examples.input-helper'}}</li>
+    </ul>
+  </div>
 
-  {{outlet}}
+  <div class="content">
+    {{outlet}}
+  </div>
 </div>
