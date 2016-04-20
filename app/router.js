@@ -6,6 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('examples', function() {
+    this.route('input-helper');
+  });
 });
 
 export default Router;
