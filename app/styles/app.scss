@@ -2,12 +2,9 @@
 @import "neat";
 @import "bitters/base";
 
-$light-lime-green: #E8FFEB;
-$light-grey-hover: #F7F7F7;
-$black: #000000;
+@import "variables";
 
-$regular-padding: 1em;
-$narrow-padding: 0.5em;
+@import "routes/index";
 
 body {
   margin: 0 1em;

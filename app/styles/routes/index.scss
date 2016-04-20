@@ -1,0 +1,19 @@
+.github-link {
+  @include span-columns(4);
+  @include shift(4);
+
+  background-color: $light-lime-green;
+  padding: $narrow-padding;
+
+  text-align: center;
+  border-radius: 4px;
+  color: $black;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+
+  &:hover {
+    background-color: $light-lime-green-hover;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
+    color: $black;
+  }
+}
