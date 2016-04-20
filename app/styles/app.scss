@@ -1,3 +1,22 @@
 @import "bourbon";
 @import "neat";
 @import "bitters/base";
+
+body {
+  margin: 0 1em;
+}
+
+.container {
+  @include outer-container;
+}
+
+.title {
+  @include fill-parent();
+  background-color: $light-gray;
+  padding: 1em;
+
+  h1 {
+    margin: 0;
+    margin-top: 3em;
+  }
+}
