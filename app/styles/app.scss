@@ -52,3 +52,20 @@ body {
   @include span-columns(10);
   padding: $regular-padding;
 }
+
+.example {
+  @include outer-container;
+  margin: 2em 0;
+
+  h4 {
+    font-size: 1.1em;
+  }
+
+  .source {
+    @include span-columns(6);
+  }
+
+  .output {
+    @include span-columns(6);
+  }
+}
