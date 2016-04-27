@@ -7,7 +7,7 @@
 @import "routes/index";
 
 body {
-  margin: 0 1em;
+  margin: 0;
   border-top: 4px solid $dark-teal;
 }
 
@@ -55,6 +55,15 @@ body {
 .content {
   @include span-columns(10);
   padding: $regular-padding;
+  padding-top: 2.5em;
+
+  p {
+    margin-bottom: $regular-padding;
+  }
+
+  h2 {
+    margin-bottom: $regular-padding;
+  }
 }
 
 .example {
