@@ -8,6 +8,7 @@
 
 body {
   margin: 0 1em;
+  border-top: 4px solid $dark-teal;
 }
 
 .container {
@@ -16,12 +17,15 @@ body {
 
 .title {
   @include fill-parent();
-  background-color: $light-lime-green;
-  padding: $regular-padding;
+  background-color: $light-teal;
+  //padding: $regular-padding;
+  padding: 1.5rem 1rem;
+  height: 4.5rem;
 
   h1 {
-    margin: 0;
-    margin-top: 3em;
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 }
 

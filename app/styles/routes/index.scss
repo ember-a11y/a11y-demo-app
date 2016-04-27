@@ -2,7 +2,7 @@
   @include span-columns(4);
   @include shift(4);
 
-  background-color: $light-lime-green;
+  background-color: $light-teal;
   padding: $narrow-padding;
 
   text-align: center;
@@ -12,7 +12,7 @@
   font-weight: bold;
 
   &:hover {
-    background-color: $light-lime-green-hover;
+    background-color: $light-teal-hover;
     box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
     color: $black;
   }
