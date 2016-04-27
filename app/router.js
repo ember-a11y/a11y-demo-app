@@ -7,8 +7,11 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('examples', function() {
-    this.route('input-helper');
+    this.route('input-helper', function() {});
     this.route('textarea-helper');
+    this.route('link-to-helper', function() {
+      this.route('photo-gallery');
+    });
   });
 });
 
