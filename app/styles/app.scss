@@ -35,11 +35,18 @@ body {
   padding-top: $narrow-padding;
 
   li {
-    a {
-      color: $black;
-
+    a, .nav-heading {
       display: block;
       padding: $narrow-padding;
+    }
+
+    .nav-heading {
+      margin-top: 1em;
+      color: $grey;
+    }
+
+    a {
+      color: $black;
 
       &:hover {
         background-color: $light-grey-hover;
