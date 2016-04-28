@@ -15,5 +15,5 @@ Included in this addon is a demo application for testing.
 
 ## Commands
 
-* `npm run test` - Run all tests.
-* `npm run-script demo` - Publish an updated demo app.
+* `npm test` - Run all tests.
+* `npm run demo` - Publish an updated demo app.
