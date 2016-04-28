@@ -11,7 +11,7 @@
     "build": "ember build",
     "start": "ember server",
     "test": "ember test",
-    "demo": "ember github-pages:commit --message \"Publish demo application.\" && git push origin gh-pages:gh-pages"
+    "demo": "git checkout gh-pages && git branch --set-upstream-to=origin/gh-pages && git pull && git checkout master && ember github-pages:commit --message \"Publish demo application.\" && git push"
   },
   "repository": "",
   "engines": {
