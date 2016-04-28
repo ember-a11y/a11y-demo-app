@@ -8,24 +8,68 @@
 
 body {
   margin: 0;
-  border-top: 4px solid $dark-teal;
 }
-
+header {
+  @include fill-parent();
+  background-color: $light-green;
+  color: $black;
+}
+.brand-logo {
+  display: block;
+  height: 100px;
+  margin: 0 auto;
+  width: 100px;
+}
+@media (min-width: $large-screen){
+  .brand-logo {
+    display: block;
+    float: left;
+    height: 150px;
+    margin: 0;
+    width: 150px;
+  }
+}
 .container {
   @include outer-container;
-}
+} 
 
 .title {
-  @include fill-parent();
-  background-color: $light-teal;
   //padding: $regular-padding;
-  padding: 1.5rem 1rem;
-  height: 4.5rem;
+  display: block;
+  clear: both;
+  min-height: 4.5rem;
+  margin: 0 auto;
+  @media screen and (min-width: $medium-screen){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .brand-logo {
+    display: block;
+    height: 100px;
+    margin: 0 auto;
+    width: 100px;
+    @media screen and (min-width: $medium-screen){ 
+      height: 200px;
+      margin: 0;
+      width: 200px;
+    }
+
+  }
 
   h1 {
+    display: block;
+    letter-spacing: 1px;
     margin: 0 auto;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    text-align: center;
+    @media screen and (min-width: $medium-screen){
+      margin: 0 2em;
+      font-size: modular-scale(3);
+      
+    }
   }
 }
 
@@ -88,4 +132,21 @@ body {
   .output {
     @include span-columns(6);
   }
+}
+.section-title {
+  margin: 1em 0 0.5em 0;
+  border-bottom: 1px solid $light-gray;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+footer {
+  background-color: $light-green;
+  bottom: 0;
+  color: $black;
+  left: 0;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  text-align: center;
+
 }

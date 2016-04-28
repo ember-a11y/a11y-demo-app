@@ -7,3 +7,9 @@ html {
 *::after {
   box-sizing: inherit;
 }
+header, .main, footer {
+	clear: both; 
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}

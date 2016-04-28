@@ -2,7 +2,7 @@
   @include span-columns(4);
   @include shift(4);
 
-  background-color: $light-teal;
+  background-color: $medium-green;
   padding: $narrow-padding;
   margin-top: $regular-padding;
   margin-bottom: $regular-padding;
@@ -14,7 +14,7 @@
   font-weight: bold;
 
   &:hover {
-    background-color: $light-teal-hover;
+    background-color: $medium-green-hover;
     box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
     color: $black;
   }
