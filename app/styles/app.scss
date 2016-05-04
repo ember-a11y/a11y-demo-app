@@ -1,9 +1,7 @@
 @import "bourbon";
 @import "neat";
 @import "bitters/base";
-
 @import "variables";
-
 @import "routes/index";
 
 body {
@@ -74,9 +72,18 @@ header {
 }
 
 .navigation {
-  @include span-columns(2);
-
+  @include span-columns(12);
+  @include media(769px) {
+    @include span-columns(2);
+  }
+  margin: 0 auto;
   padding-top: $narrow-padding;
+  li {
+    display: inline-block;
+    @media screen and (min-width: 768px){
+      display: block;
+    }
+  }
 
   li {
     a, .nav-heading {
@@ -104,7 +111,10 @@ header {
 }
 
 .content {
-  @include span-columns(10);
+    @include span-columns(12);
+  @include media(769px) {
+    @include span-columns(10);
+  }
   padding: $regular-padding;
   padding-top: 2.5em;
 
@@ -141,12 +151,8 @@ header {
 }
 footer {
   background-color: $light-green;
-  bottom: 0;
   color: $black;
-  left: 0;
   padding: 1rem;
-  position: absolute;
-  right: 0;
   text-align: center;
 
 }
