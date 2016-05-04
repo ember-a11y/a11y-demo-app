@@ -1,17 +1,16 @@
 .github-link {
-  @include span-columns(4);
-  @include shift(4);
-
   background-color: $medium-green;
-  padding: $narrow-padding;
-  margin-top: $regular-padding;
-  margin-bottom: $regular-padding;
-
-  text-align: center;
   border-radius: 4px;
-  color: $black;
   box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.1);
+  color: $black;
+  display: block;
+  clear: both;
+  margin: 1em auto;
+  max-width: 300px;
   font-weight: bold;
+  padding: $narrow-padding;
+  text-align: center;
+
 
   &:hover {
     background-color: $medium-green-hover;
