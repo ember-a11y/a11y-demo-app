@@ -94,6 +94,10 @@ header {
     .nav-heading {
       margin-top: 1em;
       color: $grey;
+      display: none;
+      @media screen and (min-width: 768px){
+        display: block;
+      }
     }
 
     a {
