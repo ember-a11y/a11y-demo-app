@@ -6,11 +6,19 @@
 
 body {
   margin: 0;
+  background-color: #edf4ec;
+  color: $text-blue;
 }
 header {
   @include fill-parent();
-  background-color: $light-green;
-  color: $black;
+}
+a {
+  border-bottom: 1px dotted $light-gray;
+}
+a:focus {
+}
+h2 small {
+  font-size: 0.5em;
 }
 .brand-logo {
   display: block;
@@ -32,7 +40,6 @@ header {
 } 
 
 .title {
-  //padding: $regular-padding;
   display: block;
   clear: both;
   min-height: 4.5rem;
@@ -63,10 +70,10 @@ header {
     margin: 0 auto;
     text-transform: uppercase;
     text-align: center;
+    color: $text-blue;
     @media screen and (min-width: $medium-screen){
-      margin: 0 2em;
-      font-size: modular-scale(3);
-      
+      margin: 0 0.5em;
+      font-size: modular-scale(4);      
     }
   }
 }
@@ -82,13 +89,23 @@ header {
     display: inline-block;
     @media screen and (min-width: 768px){
       display: block;
+      border-bottom: 1px solid white;
+      font-size: 0.75em;
+      letter-spacing: 2px;
+      line-height: 3;
+      text-transform: uppercase;
+      font-weight: bold;
     }
   }
 
   li {
-    a, .nav-heading {
+    a {
       display: block;
       padding: $narrow-padding;
+      background-color: transparent;
+      &:hover{
+        color: darken($text-blue, 10%);
+      }
     }
 
     .nav-heading {
@@ -101,10 +118,13 @@ header {
     }
 
     a {
-      color: $black;
+      color: $text-blue;
+      border-bottom-color:transparent;
 
       &:hover {
-        background-color: $light-grey-hover;
+        border-bottom-color: transparent;
+        color: darken($text-blue, 10%);
+
       }
 
       &.active {
@@ -148,14 +168,14 @@ header {
   }
 }
 .section-title {
-  margin: 1em 0 0.5em 0;
+  margin: 1.6em 0 0.5em 0;
   border-bottom: 1px solid $light-gray;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: $text-blue;
 }
 footer {
-  background-color: $light-green;
-  color: $black;
+  border-top: 1px solid $light-gray;
   padding: 1rem;
   text-align: center;
 

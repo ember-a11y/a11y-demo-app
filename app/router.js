@@ -12,6 +12,7 @@ Router.map(function() {
     this.route('link-to-helper', function() {
       this.route('photo-gallery');
     });
+    this.route('aria-role');
   });
 });
 

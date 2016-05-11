@@ -10,21 +10,22 @@
 <div class="container">
   <ul class="navigation" role="navigation">
       <li>{{link-to 'Home' 'index'}}</li>
-      <li><span class="nav-heading">Examples</span></li>
-      <li>{{link-to 'Input helper' 'examples.input-helper'}}</li>
-      <li>{{link-to 'Link-to helper' 'examples.link-to-helper'}}</li>
-      <li>{{link-to 'Textarea helper' 'examples.textarea-helper'}}</li>
+      <li><span class="nav-heading">Helpers</span></li>
+      <li>{{link-to 'Inputs' 'examples.input-helper'}}</li>
+      <li>{{link-to 'Link-to' 'examples.link-to-helper'}}</li>
+      <li>{{link-to 'Textarea' 'examples.textarea-helper'}}</li>
+      <li>{{link-to 'Aria-Role' 'examples.aria-role'}}</li>
     </ul>
 
   <div class="content">
-    {{focusing-outlet}}
+    {{outlet}}
   </div>
 </div>
 </div>
 
 <footer class="contentinfo" role="contentinfo">
   <p class="contentinfo_copyright">
-      <small><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-color: transparent;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">ember-a11y-demo</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</small>
+      <small><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">ember-a11y-demo</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</small>
   </p>
   <p class="contentinfo_social">
   </p>

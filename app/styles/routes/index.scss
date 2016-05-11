@@ -1,20 +1,20 @@
 .github-link {
-  background-color: $medium-green;
+  background-color: #c6e1dc;
   border-radius: 4px;
   box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: $black;
+  color: #3b434e;
   display: block;
   clear: both;
   margin: 1em auto;
   max-width: 300px;
-  font-weight: bold;
-  padding: $narrow-padding;
+  font-weight: 600;
+  padding: $regular-padding;
   text-align: center;
 
 
   &:hover {
-    background-color: $medium-green-hover;
+    background-color: #a4c1bf;
     box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
-    color: $black;
+    color: #3b434e;
   }
 }
