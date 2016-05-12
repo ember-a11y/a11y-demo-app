@@ -183,11 +183,22 @@ footer {
   text-align: center;
 
 }
+article.aria-roles {
+  display: flex;
+  flex-flow: row wrap;
+}
+  h4 {
+    flex: 1;
+    align-item: stretch;
+    min-width: 100%;
+    margin-bottom: 0.5em;
+  }
 .demo-div {
+  flex: 1 0 auto;
+  min-width: 300px;
+  min-height: 100px;
   padding: 0.25em;
   border: 1px solid $light-gray;
   margin: 0 0 1em 0.5em;
-  &:first-of-type{
-    margin-top: 1em;
-  }
+
 }
