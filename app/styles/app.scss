@@ -20,6 +20,9 @@ a:focus {
 h2 small {
   font-size: 0.5em;
 }
+h4 {
+  margin-bottom: 0;
+}
 .brand-logo {
   display: block;
   height: 100px;
@@ -147,7 +150,7 @@ h2 small {
   }
 
   h2 {
-    margin-bottom: $regular-padding;
+    margin-bottom: $narrow-padding;
   }
 }
 
@@ -160,11 +163,11 @@ h2 small {
   }
 
   .source {
-    @include span-columns(6);
+    @include span-columns(12);
   }
 
   .output {
-    @include span-columns(6);
+    @include span-columns(12);
   }
 }
 .section-title {
@@ -179,4 +182,12 @@ footer {
   padding: 1rem;
   text-align: center;
 
+}
+.demo-div {
+  padding: 0.25em;
+  border: 1px solid $light-gray;
+  margin: 0 0 1em 0.5em;
+  &:first-of-type{
+    margin-top: 1em;
+  }
 }
