@@ -15,8 +15,14 @@ Router.map(function() {
     this.route('aria-role');
   });
   this.route('addons', function() {
-    this.route('power-select');  
+    this.route('power-select');
+    this.route('liquid-fire', function() {
+      this.route('sample1');
+      this.route('sample2');
+    });  
   });
+
+
   
 });
 

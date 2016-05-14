@@ -196,11 +196,20 @@ article.aria-roles {
     margin-bottom: 0.5em;
   }
 .demo-div {
-  flex: 1 0 auto;
+  flex: 1 1 1;
   min-width: 300px;
   min-height: 100px;
   padding: 0.25em;
   border: 1px solid $light-gray;
   margin: 0 0 1em 0.5em;
-
+}
+.demo-box {
+  clear: both;
+  display: block;
+  max-width: 300px;
+  min-height: 300px;
+  text-align: center;
+}
+.vr {
+  margin: 0 0.5em;
 }
