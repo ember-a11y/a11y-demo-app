@@ -14,6 +14,10 @@ Router.map(function() {
     });
     this.route('aria-role');
   });
+  this.route('addons', function() {
+    this.route('power-select');  
+  });
+  
 });
 
 export default Router;
