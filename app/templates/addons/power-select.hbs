@@ -1,0 +1,25 @@
+<h3><a href="http://www.ember-power-select.com/" rel="external">Power Select</a></h3>
+<div class="demo-div">
+<h4>Without label</h4>
+{{#power-select
+  selected=destination
+  options=cities
+  onchange=(action "chooseDestination")
+  as |name|
+}}
+  {{name}}
+{{/power-select}}
+</div>
+<div class="demo-div">
+<h4>With label (typical use)</h4>
+<label>Choose Destination
+{{#power-select
+  selected=destination
+  options=cities
+  onchange=(action "chooseDestination")
+  as |name|
+}}
+  {{name}}
+{{/power-select}}
+</label>
+</div>
