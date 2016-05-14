@@ -109,6 +109,7 @@ h4 {
       background-color: transparent;
       &:hover{
         color: darken($text-blue, 10%);
+        background-color: $light-green;
       }
     }
 
