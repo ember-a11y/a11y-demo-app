@@ -20,10 +20,8 @@ Router.map(function() {
       this.route('sample1');
       this.route('sample2');
     });  
+    this.route('frost-core');
   });
-
-
-  
 });
 
 export default Router;
