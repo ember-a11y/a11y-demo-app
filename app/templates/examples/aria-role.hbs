@@ -1,221 +1,101 @@
 <h3 class="section-title">Aria-role support</h3>
 <p class="lead">Ember provides aria role support with the addition of the <kbd>ariaRole</kbd> property.  </p>
 <section>
-<h4 class="section-title">Aria Role</h4>
-<p>For this section, aria- roles have been applied to a div element. Note: this does not mean that these roles are appropriate for a div element. This is only to demonstrate what happens when these roles are on a div element. Many roles are only appropriate for specific HTML elements and the spec specifically defines which are acceptable.</p>
-<p>There are four usable categories: <a href="examples/aria-role/#role-widget">Widget</a>, <a href="examples/aria-role/#role-composite">widgets that act as composite interface widgets</a>, <a href="examples/aria-role/#role-docstructure">document structure</a>, and <a href="examples/aria-role/#role-landmark">landmarks</a>.</p>
+  <h4 class="section-title">Aria Role</h4>
+  <p>For this section, aria- roles have been applied to a div element. Note: this does not mean that these roles are appropriate for a div element. This is only to demonstrate what happens when these roles are on a div element. Many roles are only appropriate for specific HTML elements and the spec specifically defines which are acceptable.</p>
+  <p>There are four usable categories: <a href="examples/aria-role/#role-widget">Widget</a>, <a href="examples/aria-role/#role-composite">widgets that act as composite interface widgets</a>, <a href="examples/aria-role/#role-docstructure">document structure</a>, and <a href="examples/aria-role/#role-landmark">landmarks</a>.</p>
 
-<article class="aria-roles">
-<h5><a id="role-widget"></a>Widget Roles</h5>
-{{#demo-div ariaRole="alert"}}
-	This div has a role set to "alert."
-{{/demo-div}}
-{{#demo-div ariaRole="alertdialog"}}
-	This div has a role set to "alertdialog."
-{{/demo-div}}
-{{#demo-div ariaRole="button"}}
-	This div has a role set to "button."
-{{/demo-div}}
-{{#demo-div ariaRole="checkbox"}}
-	This div has a role set to "checkbox."
-{{/demo-div}}
-{{#demo-div ariaRole="dialog"}}
-	This div has a role set to "dialog."
-{{/demo-div}}
-{{#demo-div ariaRole="gridcell"}}
-	This div has a role set to "gridcell."
-{{/demo-div}}
-{{#demo-div ariaRole="link"}}
-	This div has a role set to "link."
-{{/demo-div}}
-{{#demo-div ariaRole="log"}}
-	This div has a role set to "log."
-{{/demo-div}}
-{{#demo-div ariaRole="marquee"}}
-	This div has a role set to "marquee."
-{{/demo-div}}
-{{#demo-div ariaRole="menuitem"}}
-	This div has a role set to "menuitem."
-{{/demo-div}}
-{{#demo-div ariaRole="menuitemcheckbox"}}
-	This div has a role set to "menuitemcheckbox."
-{{/demo-div}}
-{{#demo-div ariaRole="option"}}
-	This div has a role set to "option."
-{{/demo-div}}
-{{#demo-div ariaRole="progressbar"}}
-	This div has a role set to "progressbar."
-{{/demo-div}}
-{{#demo-div ariaRole="radio"}}
-	This div has a role set to "radio."
-{{/demo-div}}
-{{#demo-div ariaRole="scrollbar"}}
-	This div has a role set to "scrollbar."
-{{/demo-div}}
-{{#demo-div ariaRole="slider"}}
-	This div has a role set to "slider."
-{{/demo-div}}
-{{#demo-div ariaRole="spinbutton"}}
-	This div has a role set to "spinbutton."
-{{/demo-div}}
-{{#demo-div ariaRole="status"}}
-	This div has a role set to "status."
-{{/demo-div}}
-{{#demo-div ariaRole="tab"}}
-	This div has a role set to "tab."
-{{/demo-div}}
-{{#demo-div ariaRole="tabpanel"}}
-	This div has a role set to "tabpanel."
-{{/demo-div}}
-{{#demo-div ariaRole="textbox"}}
-	This div has a role set to "textbox."
-{{/demo-div}}
-{{#demo-div ariaRole="timer"}}
-	This div has a role set to "timer."
-{{/demo-div}}
-{{#demo-div ariaRole="tooltip"}}
-	This div has a role set to "tooltip."
-{{/demo-div}}
-{{#demo-div ariaRole="treeitem"}}
-	This div has a role set to "treeitem."
-{{/demo-div}}
-</article>
+  <article class="aria-roles">
+    <h5><a id="role-widget"></a>Widget Roles</h5>
+    {{demo-div ariaRole="alert"}}
+    {{demo-div ariaRole="alertdialog"}}
+    {{demo-div ariaRole="button"}}
+    {{demo-div ariaRole="checkbox"}}
+    {{demo-div ariaRole="dialog"}}
+    {{demo-div ariaRole="gridcell"}}
+    {{demo-div ariaRole="link"}}
+    {{demo-div ariaRole="log"}}
+    {{demo-div ariaRole="marquee"}}
+    {{demo-div ariaRole="menuitem"}}
+    {{demo-div ariaRole="menuitemcheckbox"}}
+    {{demo-div ariaRole="option"}}
+    {{demo-div ariaRole="progressbar"}}
+    {{demo-div ariaRole="radio"}}
+    {{demo-div ariaRole="scrollbar"}}
+    {{demo-div ariaRole="slider"}}
+    {{demo-div ariaRole="spinbutton"}}
+    {{demo-div ariaRole="status"}}
+    {{demo-div ariaRole="tab"}}
+    {{demo-div ariaRole="tabpanel"}}
+    {{demo-div ariaRole="textbox"}}
+    {{demo-div ariaRole="timer"}}
+    {{demo-div ariaRole="tooltip"}}
+    {{demo-div ariaRole="treeitem"}}
+  </article>
 
-<article class="aria-roles">
+  <article class="aria-roles">
 
-<h5><a id="role-composite"></a>Widgets that act as composite user interface widgets</h5>
-{{#demo-div ariaRole="combobox"}}
-	This div has a role set to "combobox."
-{{/demo-div}}
-{{#demo-div ariaRole="grid"}}
-	This div has a role set to "grid."
-{{/demo-div}}
-{{#demo-div ariaRole="listbox"}}
-	This div has a role set to "listbox."
-{{/demo-div}}
-{{#demo-div ariaRole="menu"}}
-	This div has a role set to "menu."
-{{/demo-div}}
-{{#demo-div ariaRole="menubar"}}
-	This div has a role set to "menubar."
-{{/demo-div}}
-{{#demo-div ariaRole="radiogroup"}}
-	This div has a role set to "radiogroup."
-{{/demo-div}}
-{{#demo-div ariaRole="tablist"}}
-	This div has a role set to "tablist."
-{{/demo-div}}
-{{#demo-div ariaRole="tree"}}
-	This div has a role set to "tree."
-{{/demo-div}}
-{{#demo-div ariaRole="treegrid"}}
-	This div has a role set to "treegrid."
-{{/demo-div}}
-</article>
+    <h5><a id="role-composite"></a>Widgets that act as composite user interface widgets</h5>
+    {{demo-div ariaRole="combobox"}}
+    {{demo-div ariaRole="grid"}}
+    {{demo-div ariaRole="listbox"}}
+    {{demo-div ariaRole="menu"}}
+    {{demo-div ariaRole="menubar"}}
+    {{demo-div ariaRole="radiogroup"}}
+    {{demo-div ariaRole="tablist"}}
+    {{demo-div ariaRole="tree"}}
+    {{demo-div ariaRole="treegrid"}}
+  </article>
 
-<article class="aria-roles">
+  <article class="aria-roles">
 
-<h5><a id="role-docstructure"></a>Document Structure</h5>
-{{#demo-div ariaRole="article"}}
-	This div has a role set to "article."
-{{/demo-div}}
-{{#demo-div ariaRole="columnheader"}}
-	This div has a role set to "columnheader."
-{{/demo-div}}
-{{#demo-div ariaRole="definition"}}
-	This div has a role set to "definition."
-{{/demo-div}}
-{{#demo-div ariaRole="directory"}}
-	This div has a role set to "directory."
-{{/demo-div}}
-{{#demo-div ariaRole="document"}}
-	This div has a role set to "document."
-{{/demo-div}}
-{{#demo-div ariaRole="group"}}
-	This div has a role set to "group."
-{{/demo-div}}
-{{#demo-div ariaRole="heading"}}
-	This div has a role set to "heading."
-{{/demo-div}}
-{{#demo-div ariaRole="img"}}
-	This div has a role set to "img."
-{{/demo-div}}
-{{#demo-div ariaRole="list"}}
-	This div has a role set to "list."
-{{/demo-div}}
-{{#demo-div ariaRole="listitem"}}
-	This div has a role set to "listitem."
-{{/demo-div}}
-{{#demo-div ariaRole="math"}}
-	This div has a role set to "math."
-{{/demo-div}}
-{{#demo-div ariaRole="note"}}
-	This div has a role set to "note."
-{{/demo-div}}
-{{#demo-div ariaRole="presentation"}}
-	This div has a role set to "presentation."
-{{/demo-div}}
-{{#demo-div ariaRole="region"}}
-	This div has a role set to "region."
-{{/demo-div}}
-{{#demo-div ariaRole="row"}}
-	This div has a role set to "row."
-{{/demo-div}}
-{{#demo-div ariaRole="rowgroup"}}
-	This div has a role set to "rowgroup."
-{{/demo-div}}
-{{#demo-div ariaRole="rowheader"}}
-	This div has a role set to "rowheader."
-{{/demo-div}}
-{{#demo-div ariaRole="separator"}}
-	This div has a role set to "separator."
-{{/demo-div}}
-{{#demo-div ariaRole="toolbar"}}
-	This div has a role set to "toolbar."
-{{/demo-div}}
+    <h5><a id="role-docstructure"></a>Document Structure</h5>
+    {{demo-div ariaRole="article"}}
+    {{demo-div ariaRole="columnheader"}}
+    {{demo-div ariaRole="definition"}}
+    {{demo-div ariaRole="directory"}}
+    {{demo-div ariaRole="document"}}
+    {{demo-div ariaRole="group"}}
+    {{demo-div ariaRole="heading"}}
+    {{demo-div ariaRole="img"}}
+    {{demo-div ariaRole="list"}}
+    {{demo-div ariaRole="listitem"}}
+    {{demo-div ariaRole="math"}}
+    {{demo-div ariaRole="note"}}
+    {{demo-div ariaRole="presentation"}}
+    {{demo-div ariaRole="region"}}
+    {{demo-div ariaRole="row"}}
+    {{demo-div ariaRole="rowgroup"}}
+    {{demo-div ariaRole="rowheader"}}
+    {{demo-div ariaRole="separator"}}
+    {{demo-div ariaRole="toolbar"}}
 
-</article>
+  </article>
 
-<article class="aria-roles">
-<h5><a id="role-landmark"></a>Landmark Roles</h5>
-{{#demo-div ariaRole="application"}}
-	This div has a role set to "application."
-{{/demo-div}}
-{{#demo-div ariaRole="banner"}}
-	This div has a role set to "banner."
-{{/demo-div}}
-{{#demo-div ariaRole="complementary"}}
-	This div has a role set to "complementary."
-{{/demo-div}}
-{{#demo-div ariaRole="contentinfo"}}
-	This div has a role set to "contentinfo."
-{{/demo-div}}
-{{#demo-div ariaRole="form"}}
-	This div has a role set to "form."
-{{/demo-div}}
-{{#demo-div ariaRole="main"}}
-	This div has a role set to "main."
-{{/demo-div}}
-{{#demo-div ariaRole="navigation"}}
-	This div has a role set to "navigation."
-{{/demo-div}}
-{{#demo-div ariaRole="search"}}
-	This div has a role set to "search."
-{{/demo-div}}
-</article>
+  <article class="aria-roles">
+    <h5><a id="role-landmark"></a>Landmark Roles</h5>
+    {{demo-div ariaRole="application"}}
+    {{demo-div ariaRole="banner"}}
+    {{demo-div ariaRole="complementary"}}
+    {{demo-div ariaRole="contentinfo"}}
+    {{demo-div ariaRole="form"}}
+    {{demo-div ariaRole="main"}}
+    {{demo-div ariaRole="navigation"}}
+    {{demo-div ariaRole="search"}}
+  </article>
 
-<h3 class="section-title">Links</h3>
+  <h3 class="section-title">Links</h3>
 
-<ul>
-  <li>
-    <a href="http://emberjs.com/api/classes/Ember.AriaRoleSupport.html" rel="external">
-      Documentation
-    </a>
-  </li>
-  <li>
-    <a href="https://github.com/emberjs/ember.js/blob/v2.5.0/packages/ember-views/lib/mixins/aria_role_support.js#L8" rel="external">
-      Source code
-    </a>
-  </li>
-</ul>
+  <ul>
+    <li>
+      <a href="http://emberjs.com/api/classes/Ember.AriaRoleSupport.html" rel="external">
+        Documentation
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/emberjs/ember.js/blob/v2.5.0/packages/ember-views/lib/mixins/aria_role_support.js#L8" rel="external">
+        Source code
+      </a>
+    </li>
+  </ul>
 </section>
