@@ -1,6 +1,7 @@
 <h3 class="section-title"><a href="http://www.ember-power-select.com/" rel="external">Power Select</a></h3>
-<div class="demo-div">
-<h4>Without label</h4>
+<div class="example">
+<h4>Without label:</h4>
+<div class="output">
 {{#power-select
   selected=destination
   options=cities
@@ -10,8 +11,23 @@
   {{name}}
 {{/power-select}}
 </div>
-<div class="demo-div">
-<h4>With label (typical use)</h4>
+
+<div class="source">
+  <pre>
+  \{{#power-select
+    selected=destination
+    options=cities
+    onchange=(action "chooseDestination")
+    as |name|
+  }}
+    \{{name}}
+  \{{/power-select}}
+  </pre>
+</div>
+</div>
+<div class="example">
+<h4>With label (typical use):</h4>
+<div class="output">
 <label>Choose Destination
 {{#power-select
   selected=destination
@@ -22,4 +38,19 @@
   {{name}}
 {{/power-select}}
 </label>
+</div>
+<div class="source">
+  <pre>
+  &lt;label&gt;Choose Destination
+  \{{#power-select
+    selected=destination
+    options=cities
+    onchange=(action "chooseDestination")
+    as |name|
+  }}
+    \{{name}}
+  \{{/power-select}}
+  &lt;&sol;label&gt;
+  </pre>
+</div>
 </div>

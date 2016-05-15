@@ -21,7 +21,9 @@ Router.map(function() {
       this.route('sample2');
     });  
     this.route('frost-core');
+    this.route('ember-moment');
   });
+  
 });
 
 export default Router;
