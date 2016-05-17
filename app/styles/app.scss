@@ -290,3 +290,35 @@ pre code {
   background-color: transparent;
   border-radius: 0;
 }
+.ivy-tabs {
+  .ivy-tab-list {
+    .ivy-tab {
+      background-color: white;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      border-top: 3px solid $light-green-hover;
+      border-left: 3px solid $light-green-hover;
+      border-right: 3px solid $light-green-hover;
+      display: inline-block;
+      min-width: 120px;
+      padding: 1em;
+      text-align: center;
+      &.active{
+        background-color: $light-green-hover;
+        text-color: white;
+        font-weight: bold;
+
+      }
+    }
+  }
+  .ivy-tab-panel{
+    min-height: 500px;
+    padding: 1em;
+    border: 3px solid $light-green-hover;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    &.active{
+      background-color: white;
+    }
+  }
+}

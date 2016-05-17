@@ -19,9 +19,10 @@ Router.map(function() {
     this.route('liquid-fire', function() {
       this.route('sample1');
       this.route('sample2');
-    });  
+    });
     this.route('frost-core');
     this.route('ember-moment');
+    this.route('ivy-tabs');
   });
   
 });
