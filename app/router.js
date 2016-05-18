@@ -27,8 +27,4 @@ Router.map(function() {
   
 });
 
-Router.reopen({
-  location: 'auto'
-});
-
 export default Router;
