@@ -23,6 +23,7 @@ Router.map(function() {
     this.route('frost-core');
     this.route('ember-moment');
     this.route('ivy-tabs');
+    this.route('ember-tooltips');
   });
   
 });
