@@ -14,7 +14,8 @@
     "lint:js": "eslint .",
     "start": "ember serve",
     "test": "ember test",
-    "demo": "git checkout gh-pages && git branch --set-upstream-to=origin/gh-pages && git reset --hard origin/gh-pages && git pull && git checkout master && ember github-pages:commit --message \"Publish demo application.\" && git push origin gh-pages:gh-pages"
+    "demo": "git checkout gh-pages && git branch --set-upstream-to=origin/gh-pages && git reset --hard origin/gh-pages && git pull && git checkout master && ember github-pages:commit --message \"Publish demo application.\" && git push origin gh-pages:gh-pages",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "repository": "",
   "devDependencies": {
@@ -51,6 +52,7 @@
     "ember-welcome-page": "^4.0.0",
     "eslint-plugin-ember": "^7.7.2",
     "eslint-plugin-node": "^11.0.0",
+    "gh-pages": "^2.2.0",
     "loader.js": "^4.7.0",
     "qunit-dom": "^1.0.0",
     "sass": "^1.26.3"
