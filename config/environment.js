@@ -45,7 +45,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.locationType = 'hash';
-    ENV.baseURL = '/a11y-demo-app/';
+    ENV.rootURL = '/a11y-demo-app/';
 
   }
 
