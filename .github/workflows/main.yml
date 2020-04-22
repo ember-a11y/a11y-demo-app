@@ -1,11 +1,11 @@
 name: Build
 on:
+  - pull_request
   push:
     branches:
       - master
     tags:
       - '*'
-  pull_request: {}
 
 jobs:
   lint:
@@ -20,14 +20,3 @@ jobs:
       - run: npm install
       - run: npm run lint:js
       - run: npm run lint:hbs
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-	with:
-	  fetch-depth: 0
-      - uses: actions/setup-node@v1
-	with:
-	  node-version: 12
-      - run: npm install
-      - run: npm test
