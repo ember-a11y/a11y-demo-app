@@ -1,24 +1,19 @@
-import { moduleForComponent, test } from 'ember-qunit';
+import { find, render } from '@ember/test-helpers';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('demo-div', 'Integration | Component | demo div', {
-  integration: true
-});
+module('Integration | Component | demo div', function(hooks) {
+  setupRenderingTest(hooks);
 
-test('it renders', function(assert) {
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
+  test('it renders', async function(assert) {
+    // Set any properties with this.set('myProperty', 'value');
+    // Handle any actions with this.on('myAction', function(val) { ... });
 
-  this.render(hbs`{{demo-div}}`);
+    await render(hbs`{{demo-div ariaRole='nav'}}`);
 
-  assert.equal(this.$().text().trim(), '');
+    assert.equal(find('*').textContent.trim(), 'This div has a role set to "nav"');
 
-  // Template block usage:
-  this.render(hbs`
-    {{#demo-div}}
-      template block text
-    {{/demo-div}}
-  `);
 
-  assert.equal(this.$().text().trim(), 'template block text');
+  });
 });
