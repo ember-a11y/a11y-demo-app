@@ -23,9 +23,13 @@ h4 {
 }
 .brand-logo {
   display: block;
-  height: 100px;
+  height: 150px;
   margin: 0 auto;
-  width: 100px;
+  width: 150px;
+}
+
+.brand-logo img {
+  width: 100%;
 }
 @media (min-width: $large-screen){
   .brand-logo {
@@ -65,11 +69,14 @@ h4 {
     margin: 0 auto;
     width: 100px;
     @media screen and (min-width: $medium-screen){ 
-      height: 200px;
+      height: 100px;
       margin: 0;
-      width: 200px;
+      width: 100px;
     }
 
+    img {
+      width: 100%;
+    }
   }
 
   h1 {
