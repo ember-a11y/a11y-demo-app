@@ -1,17 +1,14 @@
-@import "bourbon";
-@import "neat";
-@import "bitters/base";
 @import "variables";
 @import "routes/index";
-@import "ember-power-select";
 
 body {
   margin: 0;
   background-color: #edf4ec;
   color: $text-blue;
+  font-family: 'Lato', 'Helvetica',sans-serif;
 }
 header {
-  @include fill-parent();
+  width: 100%;
 }
 a {
   border-bottom: 1px dotted $light-gray;
@@ -40,8 +37,15 @@ h4 {
   }
 }
 .container {
-  @include outer-container;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 } 
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+}
 
 .title {
   display: block;
@@ -83,10 +87,6 @@ h4 {
 }
 
 .navigation {
-  @include span-columns(12);
-  @include media(769px) {
-    @include span-columns(2);
-  }
   margin: 0 auto;
   padding-top: $narrow-padding;
   li {
@@ -140,10 +140,7 @@ h4 {
 }
 
 .content {
-    @include span-columns(12);
-  @include media(769px) {
-    @include span-columns(10);
-  }
+
   padding: $regular-padding;
   padding-top: 2.5em;
 
@@ -157,7 +154,9 @@ h4 {
 }
 
 .example {
-  @include outer-container;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   margin: 2em 0;
 
   h4 {
@@ -168,7 +167,6 @@ h4 {
   }
 
   .source {
-    @include span-columns(12);
     margin-right: 0;
     margin-left: 0;
     background-color: #fff;
@@ -190,7 +188,6 @@ h4 {
     }
   }
   .output {
-    @include span-columns(12);
     margin-bottom: 1em;
   }
 }

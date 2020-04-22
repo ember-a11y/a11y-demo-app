@@ -1,9 +1,10 @@
-import Ember from 'ember';
+import EmberRouter from '@ember/routing/router';
 import config from './config/environment';
 
-const Router = Ember.Router.extend({
-  location: config.locationType
-});
+export default class Router extends EmberRouter {
+  location = config.locationType;
+  rootURL = config.rootURL;
+}
 
 Router.map(function() {
   this.route('examples', function() {
@@ -15,17 +16,7 @@ Router.map(function() {
     this.route('aria-role');
   });
   this.route('addons', function() {
-    this.route('power-select');
-    this.route('liquid-fire', function() {
-      this.route('sample1');
-      this.route('sample2');
-    });
-    this.route('frost-core');
     this.route('ember-moment');
-    this.route('ivy-tabs');
-    this.route('ember-tooltips');
   });
   
 });
-
-export default Router;

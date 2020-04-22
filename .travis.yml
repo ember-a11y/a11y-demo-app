@@ -1,22 +1,27 @@
 ---
 language: node_js
 node_js:
-  - "4"
+  - "10"
 
-sudo: false
+dist: trusty
+
+addons:
+  chrome: stable
 
 cache:
   directories:
-    - node_modules
+    - $HOME/.npm
 
-before_install:
-  - npm config set spin false
-  - npm install -g bower
-  - npm install phantomjs-prebuilt
+env:
+  global:
+    # See https://git.io/vdao3 for details.
+    - JOBS=1
 
-install:
-  - npm install
-  - bower install
+branches:
+  only:
+    - master
 
 script:
+  - npm run lint:hbs
+  - npm run lint:js
   - npm test
