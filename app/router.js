@@ -18,4 +18,5 @@ Router.map(function() {
   this.route('addons', function() {
     this.route('ember-moment');
   });
+  this.route('not-found', { path: '*path' })
 });
